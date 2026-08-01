@@ -1,0 +1,33 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - type == "City"
+        - file.name != "New City"
+    order:
+      - file.name
+      - type
+      - Primary Race
+      - region
+      - Continent
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: type
+        direction: ASC
+      - property: Primary Race
+        direction: ASC
+      - property: Continent
+        direction: ASC
+      - property: region
+        direction: ASC
+    columnSize:
+      file.name: 146
+      note.Primary Race: 155
+  - type: list
+    name: List View
+  - type: cards
+    name: Card View
+  - type: table
+    name: View
